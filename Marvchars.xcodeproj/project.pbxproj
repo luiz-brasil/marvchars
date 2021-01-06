@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		91E9CFD7C2E93DEDD956D559 /* Pods_Marvchars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CA3B86C86A08DD5DA1231DE /* Pods_Marvchars.framework */; };
+		AD18240225A52A5800E80F68 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD18240125A52A5800E80F68 /* HomeView.swift */; };
+		AD18240825A52B1D00E80F68 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD18240725A52B1D00E80F68 /* TabBarViewController.swift */; };
+		AD18241025A52B6E00E80F68 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD18240F25A52B6E00E80F68 /* Tab.swift */; };
+		AD18241825A52C9700E80F68 /* TabBarFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD18241725A52C9700E80F68 /* TabBarFactory.swift */; };
 		AD571AD125A2217B007ED48E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD571AD025A2217B007ED48E /* AppDelegate.swift */; };
-		AD571AD525A2217B007ED48E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD571AD425A2217B007ED48E /* ViewController.swift */; };
+		AD571AD525A2217B007ED48E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD571AD425A2217B007ED48E /* HomeViewController.swift */; };
 		AD571ADA25A2217B007ED48E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD571AD925A2217B007ED48E /* Assets.xcassets */; };
 		AD571ADD25A2217B007ED48E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD571ADB25A2217B007ED48E /* LaunchScreen.storyboard */; };
 		AD571AE825A2217C007ED48E /* MarvcharsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD571AE725A2217C007ED48E /* MarvcharsTests.swift */; };
@@ -43,9 +48,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0574913EC5F86E90B53773F6 /* Pods-Marvchars.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marvchars.debug.xcconfig"; path = "Target Support Files/Pods-Marvchars/Pods-Marvchars.debug.xcconfig"; sourceTree = "<group>"; };
+		0CA3B86C86A08DD5DA1231DE /* Pods_Marvchars.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Marvchars.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACF44AF005E949FC65BD042F /* Pods-Marvchars.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marvchars.release.xcconfig"; path = "Target Support Files/Pods-Marvchars/Pods-Marvchars.release.xcconfig"; sourceTree = "<group>"; };
+		AD18240125A52A5800E80F68 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		AD18240725A52B1D00E80F68 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		AD18240F25A52B6E00E80F68 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
+		AD18241725A52C9700E80F68 /* TabBarFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarFactory.swift; sourceTree = "<group>"; };
 		AD571ACD25A2217B007ED48E /* Marvchars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marvchars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD571AD025A2217B007ED48E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AD571AD425A2217B007ED48E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AD571AD425A2217B007ED48E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		AD571AD925A2217B007ED48E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD571ADC25A2217B007ED48E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD571ADE25A2217B007ED48E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -72,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91E9CFD7C2E93DEDD956D559 /* Pods_Marvchars.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +105,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		41C116AA3C9421E8474689A7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0574913EC5F86E90B53773F6 /* Pods-Marvchars.debug.xcconfig */,
+				ACF44AF005E949FC65BD042F /* Pods-Marvchars.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9768C4B145F49E243EA1E009 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0CA3B86C86A08DD5DA1231DE /* Pods_Marvchars.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AD1823FC25A52A0B00E80F68 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				AD18240625A52AFD00E80F68 /* TabBar */,
+				AD1823FD25A52A3E00E80F68 /* Home */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		AD1823FD25A52A3E00E80F68 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				AD571AD425A2217B007ED48E /* HomeViewController.swift */,
+				AD18240125A52A5800E80F68 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		AD18240625A52AFD00E80F68 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				AD18240725A52B1D00E80F68 /* TabBarViewController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
 		AD571AC425A2217B007ED48E = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +155,8 @@
 				AD571AE625A2217C007ED48E /* MarvcharsTests */,
 				AD571AF125A2217C007ED48E /* MarvcharsUITests */,
 				AD571ACE25A2217B007ED48E /* Products */,
+				41C116AA3C9421E8474689A7 /* Pods */,
+				9768C4B145F49E243EA1E009 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,9 +173,9 @@
 		AD571ACF25A2217B007ED48E /* Marvchars */ = {
 			isa = PBXGroup;
 			children = (
+				AD1823FC25A52A0B00E80F68 /* Scenes */,
 				AD85D33A25A22836006F98C1 /* Core */,
 				AD571AD025A2217B007ED48E /* AppDelegate.swift */,
-				AD571AD425A2217B007ED48E /* ViewController.swift */,
 				AD571AD925A2217B007ED48E /* Assets.xcassets */,
 				AD571ADB25A2217B007ED48E /* LaunchScreen.storyboard */,
 				AD571ADE25A2217B007ED48E /* Info.plist */,
@@ -161,6 +219,8 @@
 			children = (
 				AD85D34C25A22D76006F98C1 /* WindowInitializer.swift */,
 				AD85D35925A23194006F98C1 /* UIEnvironment.swift */,
+				AD18240F25A52B6E00E80F68 /* Tab.swift */,
+				AD18241725A52C9700E80F68 /* TabBarFactory.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -215,9 +275,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AD571AF725A2217C007ED48E /* Build configuration list for PBXNativeTarget "Marvchars" */;
 			buildPhases = (
+				6589D4B7D9507D26F7CE2C3A /* [CP] Check Pods Manifest.lock */,
 				AD571AC925A2217B007ED48E /* Sources */,
 				AD571ACA25A2217B007ED48E /* Frameworks */,
 				AD571ACB25A2217B007ED48E /* Resources */,
+				ADA6081C25A5362E00DEE654 /* Swiftgen */,
 			);
 			buildRules = (
 			);
@@ -332,14 +394,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6589D4B7D9507D26F7CE2C3A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Marvchars-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ADA6081C25A5362E00DEE654 /* Swiftgen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftgen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ -f \"${PODS_ROOT}/SwiftGen/bin/swiftgen\" ]]; then\n  \"${PODS_ROOT}/SwiftGen/bin/swiftgen\"\nelse\n  echo \"warning: SwiftGen is not installed. Run 'pod install --repo-update' to install it.\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AD571AC925A2217B007ED48E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD571AD525A2217B007ED48E /* ViewController.swift in Sources */,
+				AD18240825A52B1D00E80F68 /* TabBarViewController.swift in Sources */,
+				AD571AD525A2217B007ED48E /* HomeViewController.swift in Sources */,
+				AD18240225A52A5800E80F68 /* HomeView.swift in Sources */,
 				AD571AD125A2217B007ED48E /* AppDelegate.swift in Sources */,
 				AD85D34D25A22D76006F98C1 /* WindowInitializer.swift in Sources */,
+				AD18241025A52B6E00E80F68 /* Tab.swift in Sources */,
+				AD18241825A52C9700E80F68 /* TabBarFactory.swift in Sources */,
 				AD85D35A25A23194006F98C1 /* UIEnvironment.swift in Sources */,
 				AD85D33C25A2284C006F98C1 /* ApplicationInitializer.swift in Sources */,
 				AD85D35525A23039006F98C1 /* Environment.swift in Sources */,
@@ -513,6 +622,7 @@
 		};
 		AD571AF825A2217C007ED48E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0574913EC5F86E90B53773F6 /* Pods-Marvchars.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -533,6 +643,7 @@
 		};
 		AD571AF925A2217C007ED48E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACF44AF005E949FC65BD042F /* Pods-Marvchars.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

@@ -1,0 +1,6 @@
+framework module Pods_Marvchars {
+  umbrella header "Pods-Marvchars-umbrella.h"
+
+  export *
+  module * { export * }
+}
