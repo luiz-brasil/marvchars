@@ -24,13 +24,12 @@
 ##   - To know which params are supported for a template, use `swiftgen template doc xcassets swift5` to open the template documentation on GitHub.
  xcassets:
    inputs:
-     - Main.xcassets
-     - ProFeatures.xcassets
+     - Marvchars/Assets.xcassets
    outputs:
      - templateName: swift5
        params:
          forceProvidesNamespaces: true
-       output: XCAssets+Generated.swift
+       output: Marvchars/Generated/XCAssets+Generated.swift
 
 
 ## Generate constants for your storyboards and XIBs.

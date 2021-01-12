@@ -5,7 +5,13 @@ protocol TabBarFactory {
 }
 
 final class TabBarInitializer: TabBarFactory {
+    private let tabFactory: TabFactory
+
+    init(tabFactory: TabFactory) {
+        self.tabFactory = tabFactory
+    }
+
     func make() -> UITabBarController {
-        UITabBarController()
+        TabBarViewController(tabFactory: tabFactory)
     }
 }

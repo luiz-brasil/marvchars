@@ -1,11 +1,20 @@
 import UIKit
 
 final class TabBarViewController: UITabBarController {
-    override func viewDidLoad() {
-        configureUI()
+    private let tabFactory: TabFactory
+
+    init(tabFactory: TabFactory) {
+        self.tabFactory = tabFactory
+
+        super.init(nibName: nil, bundle: nil)
+
+        let tabs = tabFactory.makeAllTabs()
+
+        viewControllers = tabs
     }
 
-    private func configureUI() {
-        view.backgroundColor = .white
+    @available(*, unavailable)
+    required init?(coder: NSCoder) {
+        return nil
     }
 }

@@ -10,7 +10,9 @@ final class ApplicationInitializer: ApplicationInitialization {
 
     init(
         windowInitializer: WindowInitialization = WindowInitializer(),
-        tabBarInitializer: TabBarFactory = TabBarInitializer()
+        tabBarInitializer: TabBarFactory = TabBarInitializer(
+            tabFactory: TabInitializer(environment: Current)
+        )
     ) {
         self.windowInitializer = windowInitializer
         self.tabBarInitializer = tabBarInitializer
